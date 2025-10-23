@@ -1,6 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
+rem Prefijo se refiere al los primeros caracteres de los equipos a buscar en AD
 set "prefix=PREFIX"
 set "activeCount=0"
 set "origen=\\SERVER\SOURCE\FOLDER"
@@ -38,4 +39,5 @@ echo.
 echo Total de equipos activos procesados: %activeCount%
 
 endlocal
+
 pause
